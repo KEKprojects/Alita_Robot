@@ -89,7 +89,7 @@ async def start(c: Alita, m: Message):
             LOGGER.warning(f"Bot blocked by {m.from_user.id}")
     else:
         await m.reply_text(
-            (tlang(m, "start.group")),
+            (tlang(m, "start.private")),
             quote=True,
         )
     return
